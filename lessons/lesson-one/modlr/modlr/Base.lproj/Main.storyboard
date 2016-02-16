@@ -17,16 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-ep-cfR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-ep-cfR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-bt-yvM">
+                                <rect key="frame" x="162" y="197" width="276" height="205"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titleText" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-x7-CVA">
+                                        <rect key="frame" x="53" y="74" width="170" height="57"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MMQ-ep-cfR" secondAttribute="trailing" id="5kR-Yc-fdW"/>
+                            <constraint firstItem="MMQ-ep-cfR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Adx-0V-MeL"/>
+                            <constraint firstItem="MMQ-ep-cfR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gXl-nA-Agc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MMQ-ep-cfR" secondAttribute="bottom" id="oIL-hj-3CZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="MMQ-ep-cfR" id="6kk-Gl-Cda"/>
+                        <outlet property="brandingRect" destination="JCI-bt-yvM" id="9vU-MW-HFe"/>
+                        <outlet property="titleText" destination="fVg-x7-CVA" id="VdA-ze-iXV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885" y="657"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="titleText" width="170" height="57"/>
+    </resources>
 </document>
