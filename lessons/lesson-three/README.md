@@ -1,2 +1,2 @@
-#### MODLR - Lesson Two
-From Sketch to Swift - Episode 2 Source Files
+#### MODLR - Lesson Three
+From Sketch to Swift - Episode 3 Source Files
